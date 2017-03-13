@@ -30,16 +30,19 @@
             max-height: 400px;
         }
         .carousel-indicators li {
+            opacity: 0.8;
             display: inline-block;
-            height: 6px;
-            margin: 10px;
+            height: 12px;
+            margin: 6px;
             text-indent: 0;
             max-width: 15px;
             cursor: pointer;
             border: none;
-            border-radius: 50%;
+            border-width: 1.5px;
+            border-style: solid;
+            border-color: white;
+            border-radius: 500%;
         }
-
     </style>
 </head>
 
@@ -69,11 +72,11 @@
     </nav>
     <header>
         <div class="header-content">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
