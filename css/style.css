@@ -1,0 +1,24 @@
+/*-------------------------------------------------- 
+GLOBAL STYLES
+-------------------------------------------------- */
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+}
+
+/*-------------------------------------------------- 
+CUSTOMIZE TRANSPARENT HEADER
+-------------------------------------------------- */
+#carousel {
+    margin-top: -55px;
+}
+
+.bg-inverse {
+    background-color : transparent !important;
+}
+nav a img{
+	cursor: pointer;
+	width: 132px;
+	height: 50px;
+}
