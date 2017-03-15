@@ -17,6 +17,7 @@ CUSTOMIZE TRANSPARENT HEADER
 .bg-inverse {
     background-color : transparent !important;
 }
+
 nav a img{
 	cursor: pointer;
 	width: 132px;
