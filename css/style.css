@@ -19,7 +19,29 @@ CUSTOMIZE TRANSPARENT HEADER
 }
 
 nav a img{
-	cursor: pointer;
-	width: 132px;
-	height: 50px;
+    cursor: pointer;
+    width: 132px;
+    height: 50px;
+}
+
+i {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    padding: 30px;
+    background: #a7cd70;
+    color: white;
+    box-shadow:  0 0 0 4px #DCDCDC;
+    transition: all 0.3s ease 0s;
+}
+
+i:hover{
+    box-shadow:  0 0 0 4px #a7cd70;
+    background: white;
+    color: #a7cd70;
+}
+
+.owl-carousel {
+    position: relative;
+    height: 100%;
 }
