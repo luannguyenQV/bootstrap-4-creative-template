@@ -9,8 +9,35 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
     <link href="css/carousel.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/owl.carousel.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script>
+    $(document).ready(function() {
+      var owl = $("#owl-carousel");
+      owl.owlCarousel({
+      items : 4, //10 items above 1000px browser width
+      itemsDesktop : [1000,5], //5 items between 1000px and 901px
+      itemsDesktopSmall : [900,3], // 3 items betweem 900px and 601px
+      itemsTablet: [600,2], //2 items between 600 and 0;
+      itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+      
+      });
+    });
+    </script>
+    <style type="text/css" media="screen">
+        #owl-carousel .item{
+        background: #3fbf79;
+        padding: 30px 0px;
+        margin: 10px;
+        color: #FFF;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        text-align: center;
+    }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
@@ -89,33 +116,52 @@
                 <h2>Features</h2>
                 <hr class="primary">
                 <p>Spectrum is one of the most flexible themes available. It has a variety of different header formats, section options, and color schemes built in. It also includes complete LESS files for deeper customization!</p>
-            </div><br>
-            <div class="owl-carousel" id="owl-example">
-                <div class="row">
-                    <div class="col-sm-3">
+                <div id="owl-carousel" class="owl-carousel">
+                    <div class="col-sm-3 w3-animate-left" style="max-width:none;">
                         <i class="fa fa-code fa-3x"></i>
                         <h3>Easy to Use</h3>
                         <p>Spectrum's code is written in easy to use, HTML code blocks.</p>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-3" style="max-width:none;">
                         <i class="fa fa-envelope-o fa-3x"></i>
                         <h3>Support</h3>
                         <p>We also provide email support just in case you get lost.</p>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-3" style="max-width:none;">
                         <i class="fa fa-mobile fa-3x"></i>
                         <h3>Responsive</h3>
                         <p>Spectrum is 100% responsive and looks great on any screen.</p>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-3" style="max-width:none;">
                         <i class="fa fa-info-circle fa-3x"></i>
                         <h3>Documented</h3>
                         <p>Includes complete documentation and usage instructions.</p>
                     </div>
+                    <div class="col-sm-3" style="max-width:none;">
+                        <i class="fa fa-pencil fa-3x"></i>
+                        <h3>Easy to Use</h3>
+                        <p>Spectrum's code is written in easy to use, HTML code blocks.</p>
+                    </div>
+                    <div class="col-sm-3" style="max-width:none;">
+                        <i class="fa fa-wrench fa-3x"></i>
+                        <h3>Support</h3>
+                        <p>We also provide email support just in case you get lost.</p>
+                    </div>
+                    <div class="col-sm-3" style="max-width:none;">
+                        <i class="fa fa-rocket fa-3x"></i>
+                        <h3>Responsive</h3>
+                        <p>Spectrum is 100% responsive and looks great on any screen.</p>
+                    </div>
+                    <div class="col-sm-3" style="max-width:none;">
+                        <i class="fa fa-flag fa-3x"></i>
+                        <h3>Documented</h3>
+                        <p>Includes complete documentation and usage instructions.</p>
+                    </div>
                 </div>
-            </div>
+            </div><br>
         </div>
     </div>
+</div>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
         integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
