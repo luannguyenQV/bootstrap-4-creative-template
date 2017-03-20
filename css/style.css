@@ -18,7 +18,135 @@ CUSTOMIZE TRANSPARENT HEADER
     background-color : transparent !important;
 }
 nav a img{
-	cursor: pointer;
-	width: 132px;
-	height: 50px;
+  cursor: pointer;
+  width: 132px;
+  height: 50px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+hr.primary {
+    border-top: 6px solid #a7cd70;
+}
+
+hr.primary, hr.light, hr.dark {
+    max-width: 100px;
+    margin: 25px auto;
+    border-bottom: none;
+}
+
+.btn-primary {
+    color: #f4f5f7;
+    background-color: #a7cd70;
+    border-color: #9bc65d;
+    border-radius: 0;
+}
+
+#edit_padding{
+  margin-top: 20px;
+  position: relative;
+}
+
+i{
+  color: #e5fff2;
+}
+
+.caption-content{
+  position: absolute;
+  top: 35%;
+  left: 45%;
+  opacity: 0;
+  background-color: #008CBA;
+}
+
+.caption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 93%;
+  margin-left: 15px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+#edit_padding:hover .caption-content{
+  opacity: 1;
+}
+
+#edit_padding:hover .caption{
+  opacity: 1;
+}
+
+#edit_padding:hover .caption-content1{
+  opacity: 1;
+}
+
+.caption1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 48.5%;
+  width: 92.5%;
+  margin-left: 15px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+#edit_padding:hover .caption1{
+  opacity: 1;
+  background-color: #008CBA;
+}
+
+.caption-content1{
+  position: absolute;
+  top: 35%;
+  left: 45%;
+  opacity: 0;
+  background-color: #008CBA;
+}
+
+.blog-preview-content {
+  background-color: #f4f5f7;
+  color: #3e444d;
+  padding: 25px;
+  margin-bottom: 15px;
+}
+
+ .blog-preview-content h3 {
+  margin: 0 0 10px;
+}
+
+ .blog-preview-content h3 a {
+  color: #3e444d;
+}
+
+ .blog-preview-content p {
+  font-size: 16px;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.blog-preview-content ul li{
+  float: left;
+  display: block;
+}
+
+.blog-preview-content .continue {
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+
+@media (min-width: 767px) {
+  .blog-preview-content {
+    margin-bottom: 30px;
+  }
 }
