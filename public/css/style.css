@@ -40,6 +40,10 @@ i:hover{
     color: #a7cd70;
 }
 
+/*--------------------------------------------------
+CUSTOMIZE OWL CAROUSEL
+-------------------------------------------------- */
+
 .owl-carousel {
     position: relative;
     height: 100%;
@@ -86,6 +90,10 @@ hr.primary {
     right:0px;
 }
 
+/*--------------------------------------------------
+CUSTOMIZE FLEXIBOX
+-------------------------------------------------- */
+
 .col-sm-4{
     float:left;
     position:relative
@@ -108,40 +116,11 @@ img.flex-item {
     margin-top: 0px;
 }
 
-div[data-filter="web"]{
-    background:red;
-
-}
-
-a[data-filter="web"]:focus ~ div:not([data-filter="web"]){
-    height:0px;
-    width:0px;
-    border:none;
-    margin:0;
-}
-
-a[data-filter="graphic"]:focus ~ div:not([data-filter="graphic"]){
-    height:0px;
-    width:0px;
-    border:none;
-    margin:0;
-}
-
-a[data-filter="print"]:focus ~ div:not([data-filter="print"]){
-    height:0px;
-    width:0px;
-    border:none;
-    margin:0;
-}
-
-div {
-    -webkit-transition:all .8s linear;
-    -moz-transition:all .8s linear;
-    -o-transition:all .8s linear;
-    -ms-transition:all .8s linear;
-    transition:all .8s linear;
-}
-
 .filters {
     height: 50px;
+}
+
+.navbar-nav li a:hover {
+    border-bottom:3px solid #a7cd70;
+    padding-bottom:5px;
 }
